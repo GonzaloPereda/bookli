@@ -1,3 +1,17 @@
+EL NUMERO DEL GRUPO ES: 6
+
+INTEGRANTES:
+
+-PEREDA GONZALO
+
+
+
+
+
+
+
+
+
 # Bookli
 
 Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
@@ -19,8 +33,3 @@ Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
 
 `npm start`
 
-EL numero del grupo es: 6
-
-Integrantes:
-
--Pereda Gonzalo
