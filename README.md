@@ -18,3 +18,9 @@ Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
 ## Iniciar la app en modo producción
 
 `npm start`
+
+EL numero del grupo es: 6
+
+Integrantes:
+
+-Pereda Gonzalo
