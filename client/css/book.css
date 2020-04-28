@@ -30,6 +30,10 @@
     margin: var(--space-2) 0 0 var(--space-2);
 }
 
+.books-container .booklist .book-link :hover {
+    opacity: 0.2;
+}
+
 .book__cover img {
     max-width: 100%;
 }
