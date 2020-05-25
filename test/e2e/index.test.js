@@ -181,8 +181,22 @@ describe('Detail view', () => {
 
     
   
+    test('Deberia volver a la pantalla principal cuando apreto en el logo', browser => {
+        browser
+            .url(BASE_URL)
+            .waitForElementVisible('body')
+            .waitForElementVisible('.booklist .book')
+            .click('.search__input')
+            .keys('opera')
+            .click('.book')
+            .pause(400)
+            .click('.brand__logo');
+            browser.expect
+                .url().equal(BASE_URL+'/');
+        
+    });
+
 });
 
 
 
-'<input type="text" placeholder="Buscar un libro" class="search__input" data-ref="search"></input>'

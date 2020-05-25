@@ -61,7 +61,7 @@ test('Buscar libros por api con un resultado', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
-        country: 'Argentina',
+        country: 'Estados Unidos',
     };
 
     const secondBookData = {
@@ -100,7 +100,7 @@ test('Buscar libros por api sin ningún resultado', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
-        country: 'Argentina',
+        country: 'Estados Unidos',
     };
 
     const secondBookData = {
@@ -138,7 +138,7 @@ test('Buscar libros por api con más de un resultado', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
-        country: 'Argentina',
+        country: 'Estados Unidos',
     };
 
     const secondBookData = {
@@ -244,7 +244,7 @@ test('Obtener libros de la lista de lectura por api', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
-        country: 'Argentina',
+        country: 'Estados Unidos',
         status: BookModels.status.READING,
     };
 
@@ -379,6 +379,7 @@ test('Finalizar un libro disponible por api', async () => {
         isbn: '9788499089515',
         genres: ['Cuentos', 'Fantástico'],
         authors: ['Jorge Luis Borges'],
+        country: 'Argentina',
         cover: '/assets/el-aleph.jpg',
         country: 'Argentina',
     };
