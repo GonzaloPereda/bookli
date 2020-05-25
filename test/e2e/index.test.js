@@ -159,4 +159,30 @@ describe('Detail view', () => {
             .element('.book__actions [data-ref=removeFromFinish]')
             .text.to.equal('Volver a leer');
     });
+
+
+
+
+
+
+
+    test('Deberia testear que el input de búsqueda tenga placeholder', browser => {
+        browser
+            .url(BASE_URL)
+            .waitForElementVisible('body')
+            .waitForElementVisible('.search__input')
+            .assert.attributeContains('.search__input',
+                                      'placeholder',
+                                      'Buscar un libro')
+    });
+
+
+
+
+    
+  
 });
+
+
+
+'<input type="text" placeholder="Buscar un libro" class="search__input" data-ref="search"></input>'
