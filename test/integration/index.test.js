@@ -380,6 +380,7 @@ test('Finalizar un libro disponible por api', async () => {
         isbn: '9788499089515',
         genres: ['Cuentos', 'Fantástico'],
         authors: ['Jorge Luis Borges'],
+        country: 'Argentina',
         cover: '/assets/el-aleph.jpg',
         country: 'Argentina',
     };
