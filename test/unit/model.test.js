@@ -36,6 +36,7 @@ test('Crear libro sin título', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
+        country: 'Estados Unidos',
     };
 
     try {
@@ -56,7 +57,7 @@ test('Obtener un libro', async () => {
         genres: ['Educación', 'Tecnología', 'Programación'],
         authors: ['David Thomas', 'Andrew Hunt'],
         cover: '/assets/pragmatic-programmer.jpg',
-        country: 'Argentina',
+        country: 'Estados Unidos',
     };
 
     // Creamos el libro
