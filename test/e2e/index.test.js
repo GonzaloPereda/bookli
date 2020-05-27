@@ -177,6 +177,16 @@ describe('Detail view', () => {
     });
 
 
+    
+    test('Al hacer click en el boton Atras, deberia redireccionar a la pagina principal', browser => {
+        browser
+            .url(BASE_URL + '/detail/1')
+            .waitForElementVisible('body')
+            .waitForElementVisible('body > main > div > input[type=button]')
+            .click('body > main > div > input[type=button]')
+            .assert.urlEquals(BASE_URL+'/');
+        
+    });
 
 
     
