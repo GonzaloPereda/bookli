@@ -188,6 +188,18 @@ describe('Detail view', () => {
         
     });
 
+    test('Deberia testear que al pasar el mouse por una card de libros disponibles, se agregue opacity en esa card', browser => {
+        browser
+            .url(BASE_URL)
+            .waitForElementVisible('body')
+            .waitForElementVisible('.book')
+            .moveToElement ('body > main > div > div.books-container > div > a:nth-child(1) > div > div.book__cover',
+                                        10,
+                                        10,)
+            .assert.cssProperty('body > main > div > div.books-container > div > a:nth-child(1) > div > div.book__cover',
+                                      'opacity',
+                                      '0.8')
+    });
 
     
   
@@ -207,6 +219,8 @@ describe('Detail view', () => {
     });
 
 });
+
+
 
 
 
