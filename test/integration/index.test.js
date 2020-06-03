@@ -382,7 +382,6 @@ test('Finalizar un libro disponible por api', async () => {
         authors: ['Jorge Luis Borges'],
         country: 'Argentina',
         cover: '/assets/el-aleph.jpg',
-        country: 'Argentina',
     };
 
     // Creamos el libro
