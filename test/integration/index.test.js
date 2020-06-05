@@ -420,5 +420,5 @@ test('Al obtener libros por api, el campo de generos sea un array no vacio', asy
     const req = await fetch(URL);
     const books = await req.json();
 
-    expect(books[0].genres).not.toBe(null);
+    expect(books[0].genres.length).not.toBe(0);
 });
