@@ -184,6 +184,7 @@ describe('Detail view', () => {
             .waitForElementVisible('body')
             .waitForElementVisible('body > main > div > input[type=button]')
             .click('body > main > div > input[type=button]')
+            .pause(400)
             .assert.urlEquals(BASE_URL+'/');
         
     });
