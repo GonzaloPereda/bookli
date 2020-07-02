@@ -1,3 +1,18 @@
+EL NUMERO DEL GRUPO ES: 6
+
+INTEGRANTES:
+
+-PEREDA GONZALO
+-GONZALEZ ABIGAIL
+-LOZZIA SANTIAGO
+-Delgado Ariel Alejandro
+
+
+
+
+
+
+
 # Bookli
 
 Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
@@ -18,3 +33,4 @@ Aplicación utilizada en la cursada 2020 de Ingenieria de Software. UTN-FRLP
 ## Iniciar la app en modo producción
 
 `npm start`
+
