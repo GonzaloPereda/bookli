@@ -189,7 +189,7 @@ describe('Detail view', () => {
         
     });
 
-    test('Deberia testear que al pasar el mouse por una card de libros disponibles, se agregue opacity en esa card', browser => {
+    test('Deberia testear que al pasar el mouse por una card de libros disponibles, se agregue opacity en esa card y se pone en negrita todo el texto de la card', browser => {
         browser
             .url(BASE_URL)
             .waitForElementVisible('body')
@@ -200,6 +200,10 @@ describe('Detail view', () => {
             .assert.cssProperty('body > main > div > div.books-container > div > a:nth-child(1) > div > div.book__cover',
                                       'opacity',
                                       '0.8')
+            .assert.cssProperty('body > main > div > div.books-container > div > a:nth-child(1) > div > div.book__cover',
+            'font-weight',
+            '700')               
+
     });
 
     
