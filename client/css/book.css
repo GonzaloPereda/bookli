@@ -32,6 +32,7 @@
 
 .books-container .booklist .book-link :hover {
     opacity: 0.8;
+    font-weight: 700;
 }
 
 .book__cover img {
