@@ -23,6 +23,31 @@ after(() => {
 });
 
 describe('Home Test', () => {
+
+    test('Deberia mostrar la cantidad de libros correspondiente al filtro aplicado en la etiqueda de Cantidad de libros', browser => {
+        browser
+            .url(BASE_URL + '/detail/1')
+            .waitForElementVisible('body')
+            .waitForElementVisible('.book__actions [data-ref=addToList]')
+            .click('.book__actions [data-ref=addToList]')
+            .pause(400)
+            .waitForElementVisible('.book__actions [data-ref=removeFromList]')
+            .click('.book__actions [data-ref=addToFinish]')
+            .pause(400)
+            .waitForElementVisible(
+                '.book__actions [data-ref=removeFromFinish]');
+        
+        browser
+            .url(BASE_URL)
+            .click('body > main > div > div.filters-container > form > label:nth-child(3) > div')
+            .waitForElementVisible('#cant > strong');
+           
+        browser.expect
+            .element('#cant > strong')
+            .text.to.equal('1');
+        });
+
+    
     test('Deberia tener de titulo Bookli', browser => {
         browser
             .url(BASE_URL)
