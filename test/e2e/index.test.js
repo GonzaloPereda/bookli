@@ -28,15 +28,12 @@ describe('Home Test', () => {
         browser
             .url(BASE_URL + '/detail/1')
             .waitForElementVisible('body')
-            .waitForElementVisible('.book__actions [data-ref=addToList]')
+            .waitForElementVisible('.book__actions [data-ref=addToList]');
+
+        browser
             .click('.book__actions [data-ref=addToList]')
             .pause(400)
-            .waitForElementVisible('.book__actions [data-ref=removeFromList]')
-            .click('.book__actions [data-ref=addToFinish]')
-            .pause(400)
-            .waitForElementVisible(
-                '.book__actions [data-ref=removeFromFinish]');
-        
+            .waitForElementVisible('.book__actions [data-ref=removeFromList]');
         browser
             .url(BASE_URL)
             .click('body > main > div > div.filters-container > form > label:nth-child(3) > div')
