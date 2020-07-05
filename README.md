@@ -7,10 +7,19 @@ INTEGRANTES:
 -LOZZIA SANTIAGO
 -Delgado Ariel Alejandro
 
-v1.2.1 
+v1.2.2 
 features
 
--Agregar negrita al texto al hacer hover en las cards de la lista de libros disponibles
+-Se agrego en el home un botón de "Comprar" con un link a la sección
+de libros de Amazon.
+
+
+-Se agrego el ISBN en el detalle del libro.
+
+-Se agrego en el home un label con la cantidad de libros según el filtro
+de estados seleccionado: Descubrir (libros en estado AVAILABLE),
+Empezados (READING), Terminados (FINISHED).
+
 
 
 
