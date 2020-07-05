@@ -242,6 +242,18 @@ p {
     padding: var(--space-2) var(--space-2) var(--space-2) var(--space-5);
 }
 
+
+.filter div {
+    display: block;
+    cursor: pointer;
+    padding: var(--space-2) var(--space-2) var(--space-2) var(--space-5);
+}
+
+.filter div:hover {
+    background-color: var(--primary-light);
+}
+
+
 .filter input + div:hover {
     background-color: var(--primary-light);
 }
