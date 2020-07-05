@@ -160,12 +160,6 @@ describe('Detail view', () => {
             .text.to.equal('Volver a leer');
     });
 
-
-
-
-
-
-
     test('Deberia testear que el input de búsqueda tenga placeholder', browser => {
         browser
             .url(BASE_URL)
@@ -220,12 +214,19 @@ describe('Detail view', () => {
             .click('.brand__logo');
             browser.expect
                 .url().equal(BASE_URL+'/');
+
+                
         
     });
 
+    test('Al hacer click en el boton Comprar, deberia redireccionar a la sección de libros en Amazon', browser => {
+        browser
+            .url(BASE_URL)
+            .waitForElementVisible('body')
+            .waitForElementVisible('#botoncomprar')
+            .click('#botoncomprar')
+            .pause(400)
+            browser.expect.url().to.equal('https://www.amazon.com/s?k=libros&rh=n%3A283155&dc&language=es&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&qid=1593824082&rnid=2941120011&ref=sr_nr_n_12');
+
 });
-
-
-
-
-
+});
