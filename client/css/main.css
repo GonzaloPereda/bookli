@@ -275,4 +275,13 @@ p {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+.cantidadLibros {
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.cantidadLibros #cant {
+    background-color: #1c687d;
+}
 /* End Filters */
