@@ -242,6 +242,18 @@ p {
     padding: var(--space-2) var(--space-2) var(--space-2) var(--space-5);
 }
 
+
+.filter div {
+    display: block;
+    cursor: pointer;
+    padding: var(--space-2) var(--space-2) var(--space-2) var(--space-5);
+}
+
+.filter div:hover {
+    background-color: var(--primary-light);
+}
+
+
 .filter input + div:hover {
     background-color: var(--primary-light);
 }
@@ -262,5 +274,14 @@ p {
     left: calc(var(--space-5) - 10px);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.cantidadLibros {
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.cantidadLibros #cant {
+    background-color: #1c687d;
 }
 /* End Filters */
